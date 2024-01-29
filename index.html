@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- textarea div  -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 bg-dark">
+                <textarea onclick="numkey()" class="form-control" id="txtarea" value="" ></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!--  first row buttons div -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 ">
+
+                <div class="row">
+                    <div class="col-md-12 ">
+
+
+                        <button class="btn   a1">esc</button>
+                        <button class="btn  a1">f1</button>
+                        <button class="btn  a1">f2</button>
+                        <button class="btn  a1">f3</button>
+                        <button class="btn  a1">f4</button>
+                        <button class="btn  a1">f5</button>
+                        <button class="btn  a1">f6</button>
+                        <button class="btn  a1">f7</button>
+                        <button class="btn   a1">f8</button>
+                        <button class="btn   a1">f9</button>
+                        <button class="btn   a1">f10</button>
+                        <button class="btn   a1">f11</button>
+                        <button class="btn   a1">f12</button>
+                        <button class="btn   a1">prt sc</button>
+                        <button onclick="del()" class="btn b a1">delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn   a1">home</button>
+                        <button class="btn   a1">end</button>
+                        <button class="btn   a1">pgup</button>
+                        <button class="btn   a1">pgdn</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+
+    <!-- second row buttons -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+
+
+                        <button class="btn  a2">`</button>
+                        <button onclick="numkey('1')" class="btn  a2">1</button>
+                        <button onclick="numkey('2')" class="btn  a2"> 2</button>
+                        <button onclick="numkey('3')" class="btn  a2"> 3</button>
+                        <button onclick="numkey('4')" class="btn  a2"> 4</button>
+                        <button onclick="numkey('5')" class="btn  a2">5</button>
+                        <button onclick="numkey('6')" class="btn  a2">6</button>
+                        <button onclick="numkey('7')" class="btn  a2">7</button>
+                        <button onclick="numkey('8')" class="btn  a2">8</button>
+                        <button onclick="numkey('9')" class="btn  a2">9</button>
+                        <button onclick="numkey('0')" class="btn  a2">0</button>
+                        <button class="btn a2">-</button>
+                        <button class="btn a2">=</button>
+                        <button onclick="bkspace()"  class="btn   a2"><i class='fa fa-arrow-left'></i>backspace</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button onclick="numlck()" class="btn  a2">num<br>lock</button>
+                        <button onclick="cal('/')" class="btn   a2">/</button>
+                        <button onclick="cal('*')" class="btn   a2">*</button>
+                        <button onclick="equl('=')" class="btn   a2" style="width: 100px;">=</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+            <!-- third row buttons -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+
+
+                                <button class="btn  a3" onclick="numkey('\t')" >tab<i class='fa fa-long-arrow-right'></i></button>
+                                <button onclick="numkey('q')" class="btn  a3">Q</button>
+                                <button onclick="numkey('w')" class="btn  a3">W</button>
+                                <button onclick="numkey('e')" class="btn  a3">E</Em></button>
+                                <button  onclick="numkey('r')"class="btn  a3">R</button>
+                                <button  onclick="numkey('t')"class="btn  a3">T</button>
+                                <button  onclick="numkey('u')"  class="btn  a3">U</button>
+                                <button onclick="numkey('i')" class="btn  a3">I</button>
+                                <button onclick="numkey('o')" class="btn  a3">O</button>
+                                <button onclick="numkey('p')" class="btn  a3">P</button>
+                                <button onclick="numkey()" class="btn  a3">[</button>
+                                <button  onclick="numkey()"class="btn  a3">]</button>
+                                <button onclick="numkey()" class="btn  a3">\</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <button  onclick="num(7)"  class="btn   a3">7</button>
+                                   <button  onclick="num(8)"  class="btn   a3">8</button>
+                                   <button  onclick="num(9)"  class="btn   a3">9</button>
+                                   <button onclick="cal('-')" class="btn  a3"style="height: 60px;width: 100px;" >-</button>
+                               </div>
+                           </div>
+                       </div>
+                    </div>   
+                </div>
+            </div>
+
+             <!-- fourth row buttons -->
+             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+
+
+                                <button onclick="caps('caps lock.')"   class="btn  a4"> <i class="fas fa-sort-alpha-down"></i>caps lock .</button>
+                                <button onclick= "numkey('a')" class="btn  a4">A</button>
+                                <button onclick="numkey('s')"class="btn  a4">S</button>
+                                <button onclick="numkey('d')"class="btn  a4">D</Em></button>
+                                <button onclick="numkey('f')"class="btn  a4">F</button>
+                                <button onclick="numkey('g')"class="btn  a4">G</button>
+                                <button onclick="numkey('h')"class="btn  a4">H</button>
+
+                                <button onclick="numkey('j')"class="btn  a4">J</button>
+                                <button onclick="numkey('k')"class="btn  a4">K</button>
+                                <button onclick="numkey(';')" class="btn  a4">;</button>
+                                <button onclick="numkey()" class="btn  a4">"</button>
+                                <button onclick="numkey('\n')" class="btn  a4">Enter<br><i class="fa fa-long-arrow-left"></i></button>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <button onclick="num(4)" class="btn  a4">4</button>
+                                   <button  onclick="num(5)" class="btn  a4 ">5</button>
+                                   <button  onclick="num(6)"  class="btn   a4">6</button>
+    
+                                   <button onclick="cal('+')" class="btn   a4" style="height: 60px;width: 100px;">+</button>
+                               </div>
+                           </div>
+                       </div>
+                    </div>   
+                </div>
+            </div>
+
+             <!-- fift row buttons -->
+             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+
+
+                                <button onclick="shift('shift')" class="btn  a5"><i class="	fa fa-arrow-up"></i>shift</button>
+                                <button onclick="numkey('z')" class="btn a5 ">Z</button>
+                                <button onclick="numkey('x')"class="btn  a5 ">X</button>
+                                <button onclick="numkey('c')"class="btn  a5">C</Em></button>
+                                <button onclick="numkey('v')"class="btn   a5">V</button>
+                                <button onclick="numkey('b')"class="btn   a5">B</button>
+                                <button onclick="numkey('n')"class="btn   a5">N</button>
+                                <button onclick="numkey('m')"class="btn   a5">M</button>
+                                <button onclick="numkey(',')"class="btn  a5">,</button>
+                                <button onclick="numkey('.')"class="btn  a5">.</button>
+                                <button onclick="numkey('/')"class="btn   a5">/</button>
+                                <button class="btn   a5">?</button>
+                                <button onclick="shift('shift')" class="btn  a5"><i class="fa fa-arrow-up"></i>Shift</button>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <button  onclick="num(1)" class="btn  a5">1</button>
+                                   <button  onclick="num(2)"  class="btn  a5">2</button>
+                                   <button  onclick="num(3)"  class="btn  a5">3</button>
+                                   <button onclick="bkspace()" class="btn a5"><i class='fa fa-arrow-left'></i>backspace</button>
+                                   
+                               </div>
+                           </div>
+                       </div>
+                    </div>   
+                </div>
+            </div>
+
+<!-- sixth row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+
+
+                                <button class="btn a8">ctrl</button>
+                                <button class="btn  a8">fn</button>
+                                <button class="btn  a8"><i class="fa fa-windows"></i></button>
+                                <button class="btn a8">alt</Em></button>
+                                <button class="btn  a8" onclick="numkey(' ')" style="width: 250px;height: 50px;background-color: black; border: 1px solid white;" ></button> 
+                                <button class="btn  a8">alt</button>
+                                <button class="btn  a8">ctrl</button>
+                                <button class="btn  a8"><i class="fa fa-caret-left"></i></button>
+                                <button class="btn  a8"><i class="fa fa-caret-up"></i><br><i class="fa fa-caret-down"></i></button>
+                                <button class="btn  a8"><i class="fa fa-caret-right"></i></button>
+                               
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <button  onclick="num(0)" class="btn  a8" style="width: 100px;height: 50px;">0</button>
+                                   <button   class="btn  a8">.</button>
+                                   <button onclick="numkey('\n')"  class="btn  a8" style="height: 60px; width: 100px;">enter<br><i class="fa fa-long-arrow-left"></i></button>
+                                 
+                               </div>
+                           </div>
+                       </div>
+                    </div>   
+                </div>
+            </div>
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>
